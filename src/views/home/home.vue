@@ -82,7 +82,6 @@ export default {
 .home {
   .likelist {
     margin: 10px auto;
-    // padding: 25px 15%;
     width: 1200px;
     ul {
       overflow: hidden;

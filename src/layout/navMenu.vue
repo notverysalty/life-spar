@@ -17,5 +17,7 @@ export default {}
 <style lang="scss" scoped>
   .navMenu {
     padding: 0 30%;
+    box-sizing: border-box;
+    width: 100%;
   }
 </style>
