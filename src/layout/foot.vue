@@ -34,6 +34,7 @@ export default {
     background-image: url('../assets/Images/fotbg.jpg');
     padding-bottom: 25px;
     width: 100%;
+    overflow: hidden;
     .ewm {
       padding: 50px 0 30px 0;
       width: 1200px;

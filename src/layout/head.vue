@@ -50,7 +50,7 @@ export default {
       }
       span {
         position: absolute;
-        right: 405px;
+        right: 21%;
         top: 39px;
         font-size: 20px;
         font-weight: bold;
