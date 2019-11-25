@@ -28,7 +28,7 @@
         </li>
       </ul>
     </div>
-    <Card class="homeCard" title="墓型展示">
+    <Card class="homeCard" title="热门陵园">
       <template #body>
         <ul>
           <li>
@@ -36,7 +36,19 @@
               <div>
                 <img src="@/assets/Images/msly.jpg" alt />
               </div>
-              <p>邙山陵园</p>
+              <p>
+                <span>邙山陵园</span>
+                <span class="small">惠阳</span>
+              </p>
+              <div class="down">
+                <span>
+                  <span class="small">起价：</span>
+                  <span class="orange">来电咨询</span>
+                </span>
+                <span class="right">
+                  <span>一体的生态陵园</span>
+                </span>
+              </div>
             </router-link>
           </li>
           <li>
@@ -44,7 +56,19 @@
               <div>
                 <img src="@/assets/Images/mly.jpg" alt />
               </div>
-              <p>名人苑</p>
+              <p>
+                <span>名人苑</span>
+                <span class="small">惠阳</span>
+              </p>
+              <div class="down">
+                <span>
+                  <span class="small">起价：</span>
+                  <span class="orange">来电咨询</span>
+                </span>
+                <span class="right">
+                  <span>一体的生态陵园</span>
+                </span>
+              </div>
             </router-link>
           </li>
           <li>
@@ -52,7 +76,19 @@
               <div>
                 <img src="@/assets/Images/yay.jpg" alt />
               </div>
-              <p>怡安苑</p>
+              <p>
+                <span>怡安苑</span>
+                <span class="small">惠阳</span>
+              </p>
+              <div class="down">
+                <span>
+                  <span class="small">起价：</span>
+                  <span class="orange">来电咨询</span>
+                </span>
+                <span class="right">
+                  <span>一体的生态陵园</span>
+                </span>
+              </div>
             </router-link>
           </li>
           <li>
@@ -60,10 +96,81 @@
               <div>
                 <img src="@/assets/Images/zjy.jpg" alt />
               </div>
-              <p>紫荆苑</p>
+              <p>
+                <span>紫荆苑</span>
+                <span class="small">惠阳</span>
+              </p>
+              <div class="down">
+                <span>
+                  <span class="small">起价：</span>
+                  <span class="orange">来电咨询</span>
+                </span>
+                <span class="right">
+                  <span>一体的生态陵园</span>
+                </span>
+              </div>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/">
+              <div>
+                <img src="@/assets/Images/zjy.jpg" alt />
+              </div>
+              <p>
+                <span>名人苑</span>
+                <span class="small">惠阳</span>
+              </p>
+              <div class="down">
+                <span>
+                  <span class="small">起价：</span>
+                  <span class="orange">来电咨询</span>
+                </span>
+                <span class="right">
+                  <span>一体的生态陵园</span>
+                </span>
+              </div>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/">
+              <div>
+                <img src="@/assets/Images/zjy.jpg" alt />
+              </div>
+              <p>
+                <span>名人苑</span>
+                <span class="small">惠阳</span>
+              </p>
+              <div class="down">
+                <span>
+                  <span class="small">起价：</span>
+                  <span class="orange">来电咨询</span>
+                </span>
+                <span class="right">
+                  <span>一体的生态陵园</span>
+                </span>
+              </div>
             </router-link>
           </li>
         </ul>
+      </template>
+    </Card>
+    <Card class="show" title="墓型展示">
+      <template #body>
+        <div class="left">
+          <div class="head"></div>
+          <div class="movie"></div>
+          <div class="title"></div>
+        </div>
+        <div class="right">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </template>
     </Card>
   </div>
@@ -115,25 +222,83 @@ export default {
       li {
         list-style: none;
         float: left;
-        width: 50%;
+        width: 33%;
         a {
           text-decoration: none;
           div {
             img {
-              width: 580px;
-              height: 360px;
+              width: 380px;
+              height: 245px;
+            }
+          }
+        }
+        .down {
+          height: 40px;
+          line-height: 40px;
+          padding: 0 20px;
+          > span {
+            width: 50%;
+            display: inline-block;
+            text-align: left;
+            .small {
+              font-size: 14px;
+              color: #6f7780;
+            }
+            .orange {
+              color: #ff8347;
+              font-weight: bold;
+            }
+          }
+          .right {
+            text-align: right;
+            > span {
+              display: inline-block;
+              height: 20px;
+              line-height: 20px;
+              padding: 0 5px;
+              font-size: 14px;
+              color: white;
+              background-color: #ff6700;
+              border-radius: 3px;
             }
           }
         }
         p {
           margin: 0;
-          text-align: center;
-          height: 60px;
-          line-height: 60px;
+          text-align: left;
+          height: 40px;
+          line-height: 40px;
           font-weight: 600;
+          padding: 0 20px;
+          box-sizing: border-box;
           color: black;
+          span {
+            width: 50%;
+            display: inline-block;
+          }
+          .small {
+            font-size: 12px;
+            color: #6f7780;
+            font-weight: normal;
+            text-align: right;
+          }
         }
       }
+    }
+  }
+  > .show {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    .left {
+      float: left;
+      height: 400px;
+      width: 300px;
+      border: 1px solid #ccc;
+    }
+    .right {
+      float: right;
     }
   }
 }
